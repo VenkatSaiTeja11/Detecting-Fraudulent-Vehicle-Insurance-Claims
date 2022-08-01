@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Insurance Fraud prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+     <h5 style="text-align: center; color: brown; font-weight: 600;">{{pred}}</h5>
+      <h1 class="header center orange-text">Insurance Claims Fraud Detection</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability of claiming fraud
+        <br>
+        </h5>
+      </div>
+
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+            <div class="row">
+                 <div class="input-field col s4">
+                    <label for="amt_claim"><b>Amount Claim</b></label>
+                    <br>
+                    <input id="amt_claim" name="1" placeholder="Amount Claim"  type="text" class="validate">
+    
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Total Miles Driven </b></label>
+                    <br>
+                    <input id="last_name" name="2" placeholder="Total Miles Driven"  type="text" class="validate">
+    
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Annual Pct Driven </b></label>
+                    <br>
+                    <input id="last_name" name="3" placeholder="Annual Pct Driven"  type="text" class="validate">
+    
+                </div>
+    
+                <div class="input-field col s4">
+                    <label for="_name"><b>Duration</b></label>
+                    <br>
+                    <input id="_name" name="4" placeholder="Duration" type="text" class="validate">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="_name"><b>Region</b></label>
+                    <br>
+                    <input id="_name" name="5" placeholder="Region" type="text" class="validate">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Avg Days Per Week</b></label>
+                    <br>
+                    <input placeholder="Avg Days Per Week" name="6" id="first_name" type="text" class="validate">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Break 06 miles</b></label>
+                    <br>
+                    <input id="last_name" name="7" placeholder="Break 06 miles"  type="text" class="validate">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Annaul Miles Driven</b></label>
+                    <br>
+                    <input id="last_name" name="8" placeholder="Annaul Miles Driven"  type="text" class="validate">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="last_name"><b>Accel 06 miles</b></label>
+                    <br>
+                    <input id="last_name" name="9" placeholder="Accel 06 miles"  type="text" class="validate">
+                </div>
+                <div class="input-field col s4">
+                  <label ><b>Marital</b></label>
+                  <br>
+                  <input name = '10' placeholder="Marital">
+                </div>
+
+                <div class="input-field col s4">
+                  <label ><b>Left turn intensity 08</b></label>
+                  <br>
+                  <input name = '11' placeholder="Left turn intensity 08">
+                </div>
+
+                <div class="input-field col s4">
+                    <label for="first_name"><b>Right turn intensity 10</b></label> <br>
+                    <input placeholder="Right turn intensity 10" name="12" id="first_name" type="text" class="validate">
+                </div>
+    
+          </div>
+    
+          <div class="row center">
+    
+              <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+
+          </div>
+
+        </form>
+  </div>
+
+      <br>
+
+     
+    <br><br>
+  </div>
+  </div>>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
